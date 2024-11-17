@@ -34,9 +34,10 @@ img{
 }
 
 .small-sidebar img {
-  width: 25px;
+  width: 20px;
   margin-right: 20px;
-  padding-bottom: 1px;
+  padding-bottom: 2px;
+  padding-top: 2px;
 }
 
 .small-sidebar h3{
@@ -46,6 +47,22 @@ img{
 .small-sidebar hr {
   width: 50%;
   margin-bottom: 25px;
+}
+
+.small-sidebar .utuber {
+  width: 30px;
+  
+}
+.small-sidebar .Subscribed {
+  width: 40px;
+  display: flex;
+  flex-direction: column
+}
+
+.small-sidebar .utuber img {
+  width: 30px;
+  padding-bottom: 1px;
+  padding-top: 1px;
 }
 
 .large-Container {

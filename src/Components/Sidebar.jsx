@@ -57,39 +57,43 @@ function Sidebar({ sidebar }) {
         </div>
         <hr className=" text-slate-700  w-[85%]" />
       </div>
-      <div className="">
+      <div className="Subscribed">
         <h3 className="text-[15px] my-[20px] mx-0 text-[#5a5a5a]">
           Subscribed
         </h3>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
-          <img src={jack} alt="" className="w-[25px] rounded-[50%] mr-[20px]" />
+        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer utuber">
+          <img
+            src={jack}
+            alt=""
+            className="w-[30px] rounded-[50%] mr-[20px]"
+          />
           <p>PewDiePie</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
+        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer utuber">
           <img
             src={simon}
             alt=""
-            className="w-[25px] rounded-[50%] mr-[20px]"
+            className="w-[30px] rounded-[50%] mr-[20px]"
           />
           <p>MrBeast</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
-          <img src={tom} alt="" className="w-[25px] rounded-[50%] mr-[20px]" />
+        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer utuber">
+          <img src={tom} alt="" className="w-[30px] rounded-[50%] mr-[20px] " />
           <p>Justin Bieber</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
+        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer utuber">
           <img
             src={megan}
             alt=""
-            className="w-[25px] rounded-[50%] mr-[20px]"
+            className="w-[30px] rounded-[50%] mr-[20px]"
           />
           <p>5-Minute Crafts</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
+        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer utuber">
           <img
             src={cameron}
             alt=""
-            className="w-[25px] rounded-[50%] mr-[20px]"
+            className="w-[30px] rounded-[50%] mr-[20px] "
           />
           <p>Nas daily</p>
         </div>
