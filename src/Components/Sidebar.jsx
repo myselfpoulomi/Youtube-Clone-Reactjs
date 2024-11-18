@@ -14,7 +14,7 @@ import tom from "../assets/tom.png";
 import megan from "../assets/megan.png";
 import cameron from "../assets/cameron.png";
 
-function Sidebar({ sidebar }) {
+function Sidebar({ sidebar , category, setCatagory }) {
   return (
     <div
       className={`bg-[#fff] w-[13%] h-[100vh] fixed top-0 pl-[2%] pt-[80px] ${
@@ -22,37 +22,70 @@ function Sidebar({ sidebar }) {
       }`}
     >
       <div className="">
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
+        <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===0?"active":""}`}
+        onClick={()=>{
+          setCatagory(0)
+        }}
+        >
           <img src={home} alt="" className="w-[20px] mr-[20px]" />
           <p className="">Home</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
+        <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===20?"active":""}`}
+        onClick={()=>{
+          setCatagory(20)
+        }}
+        >
           <img src={game_icon} alt="" className="w-[20px] mr-[20px]" />
           <p>Gaming</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
+        <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===2?"active":""}`}
+        onClick={()=>{
+          setCatagory(2)
+        }}
+        >
           <img src={automobiles} alt="" className="w-[20px] mr-[20px]" />
           <p>Automobiles</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
+        <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===17?"active":""}`}
+        onClick={()=>{
+          setCatagory(17)
+        }}
+        >
           <img src={sports} alt="" className="w-[20px] mr-[20px]" />
           <p>Sports</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
+        <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===24?"active":""}`}
+        onClick={()=>{
+          setCatagory(24)
+        }}>
           <img src={entertainment} alt="" className="w-[20px] mr-[20px]" />
           <p>Entertainment</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
+        <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===28?"active":""}`}
+        onClick={()=>{
+          setCatagory(28)
+        }}>
           <img src={tech} alt="" className="w-[20px] mr-[20px]" />
           <p>Technology</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
+        <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===10?"active":""}`}
+        onClick={()=>{
+          setCatagory(10)
+        }}
+        >
           <img src={music} alt="" className="w-[20px] mr-[20px]" /> <p>Music</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
-          <img src={blogs} alt="" className="w-[20px] mr-[20px]" /> <p>Blogs</p>
+        <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===22?"active":""}`} onClick={()=>{
+            setCatagory(22)
+          }}>
+          <img src={blogs} alt="" className="w-[20px] mr-[20px]" 
+          
+          /> <p>Blogs</p>
         </div>
-        <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer">
+        <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===25?"active":""}`}
+        onClick={()=>{
+          setCatagory(25)
+        }}>
           <img src={news} alt="" className="w-[20px] mr-[20px]" /> <p>News</p>
         </div>
         <hr className=" text-slate-700  w-[85%]" />

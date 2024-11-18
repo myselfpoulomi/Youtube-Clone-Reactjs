@@ -68,3 +68,9 @@ img{
 .large-Container {
   padding-left: 7%;
 }
+
+.active img {
+  padding-bottom: 2px;
+  border-bottom: 3px solid red;
+  
+}
