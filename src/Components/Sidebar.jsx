@@ -26,8 +26,8 @@ function Sidebar({ sidebar , category, setCatagory }) {
         onClick={()=>{
           setCatagory(0)
         }}
-        >
-          <img src={home} alt="" className="w-[20px] mr-[20px]" />
+        > 
+          <img src={home} alt="" className="w-[20px] mr-[20px] mt-[15px] md:mt-[0px]" />
           <p className="hidden md:block">Home</p>
         </div>
         <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===20?"active":""}`}
