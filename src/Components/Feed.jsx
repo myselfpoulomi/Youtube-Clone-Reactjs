@@ -26,10 +26,10 @@ function Feed({ category }) {
   }, [category]);
 
   return (
-    <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-x-4 gap-y-7 mt-4">
+    <div className="md:grid md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-x-4 gap-y-7 mt-4 flex flex-col   ">
       {data.map((item, index) => {
         return (
-          <Link to={`video/${item.snippet.categoryId}/${item.id}`} className="">
+          <Link to={`video/${item.snippet.categoryId}/${item.id}`} className="pl-0">
             <img
               src={item.snippet.thumbnails.medium.url}
               alt=""
@@ -51,4 +51,4 @@ function Feed({ category }) {
   );
 }
 
-export default Feed;
+export default Feed

@@ -17,7 +17,7 @@ import cameron from "../assets/cameron.png";
 function Sidebar({ sidebar , category, setCatagory }) {
   return (
     <div
-      className={`bg-[#fff] w-[13%] h-[100vh] fixed top-0 pl-[2%] pt-[80px] ${
+      className={`md:block bg-[#fff]  h-[100vh] fixed top-0 pl-[2%] pt-[80px] flex flex-col items-center  ${
         sidebar ? " " : "small-sidebar"
       }`}
     >
@@ -28,7 +28,7 @@ function Sidebar({ sidebar , category, setCatagory }) {
         }}
         >
           <img src={home} alt="" className="w-[20px] mr-[20px]" />
-          <p className="">Home</p>
+          <p className="hidden md:block">Home</p>
         </div>
         <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===20?"active":""}`}
         onClick={()=>{
@@ -36,7 +36,7 @@ function Sidebar({ sidebar , category, setCatagory }) {
         }}
         >
           <img src={game_icon} alt="" className="w-[20px] mr-[20px]" />
-          <p>Gaming</p>
+          <p className="hidden md:block">Gaming</p>
         </div>
         <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===2?"active":""}`}
         onClick={()=>{
@@ -44,7 +44,7 @@ function Sidebar({ sidebar , category, setCatagory }) {
         }}
         >
           <img src={automobiles} alt="" className="w-[20px] mr-[20px]" />
-          <p>Automobiles</p>
+          <p className="hidden md:block">Automobiles</p>
         </div>
         <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===17?"active":""}`}
         onClick={()=>{
@@ -52,46 +52,46 @@ function Sidebar({ sidebar , category, setCatagory }) {
         }}
         >
           <img src={sports} alt="" className="w-[20px] mr-[20px]" />
-          <p>Sports</p>
+          <p className="hidden md:block">Sports</p>
         </div>
         <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===24?"active":""}`}
         onClick={()=>{
           setCatagory(24)
         }}>
           <img src={entertainment} alt="" className="w-[20px] mr-[20px]" />
-          <p>Entertainment</p>
+          <p className="hidden md:block">Entertainment</p>
         </div>
         <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===28?"active":""}`}
         onClick={()=>{
           setCatagory(28)
         }}>
           <img src={tech} alt="" className="w-[20px] mr-[20px]" />
-          <p>Technology</p>
+          <p className="hidden md:block">Technology</p>
         </div>
         <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===10?"active":""}`}
         onClick={()=>{
           setCatagory(10)
         }}
         >
-          <img src={music} alt="" className="w-[20px] mr-[20px]" /> <p>Music</p>
+          <img src={music} alt="" className="w-[20px] mr-[20px]" /> <p className="hidden md:block">Music</p>
         </div>
         <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===22?"active":""}`} onClick={()=>{
             setCatagory(22)
           }}>
           <img src={blogs} alt="" className="w-[20px] mr-[20px]" 
           
-          /> <p>Blogs</p>
+          /> <p className="hidden md:block">Blogs</p>
         </div>
         <div className={`flex items-center mb-[20px] w-fit flex-wrap cursor-pointer ${category===25?"active":""}`}
         onClick={()=>{
           setCatagory(25)
         }}>
-          <img src={news} alt="" className="w-[20px] mr-[20px]" /> <p>News</p>
+          <img src={news} alt="" className="w-[20px] mr-[20px]" /> <p className="hidden md:block">News</p>
         </div>
         <hr className=" text-slate-700  w-[85%]" />
       </div>
       <div className="Subscribed">
-        <h3 className="text-[15px] my-[20px] mx-0 text-[#5a5a5a]">
+        <h3 className="text-[15px] my-[20px] mx-0 text-[#5a5a5a]  hidden md:block">
           Subscribed
         </h3>
         <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer utuber">
@@ -100,7 +100,7 @@ function Sidebar({ sidebar , category, setCatagory }) {
             alt=""
             className="w-[30px] rounded-[50%] mr-[20px]"
           />
-          <p>PewDiePie</p>
+          <p  className="hidden md:block">PewDiePie</p>
         </div>
         <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer utuber">
           <img
@@ -108,11 +108,11 @@ function Sidebar({ sidebar , category, setCatagory }) {
             alt=""
             className="w-[30px] rounded-[50%] mr-[20px]"
           />
-          <p>MrBeast</p>
+          <p  className="hidden md:block">MrBeast</p>
         </div>
         <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer utuber">
           <img src={tom} alt="" className="w-[30px] rounded-[50%] mr-[20px] " />
-          <p>Justin Bieber</p>
+          <p  className="hidden md:block">Justin Bieber</p>
         </div>
         <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer utuber">
           <img
@@ -120,7 +120,7 @@ function Sidebar({ sidebar , category, setCatagory }) {
             alt=""
             className="w-[30px] rounded-[50%] mr-[20px]"
           />
-          <p>5-Minute Crafts</p>
+          <p  className="hidden md:block">5-Minute Crafts</p>
         </div>
         <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer utuber">
           <img
@@ -128,7 +128,7 @@ function Sidebar({ sidebar , category, setCatagory }) {
             alt=""
             className="w-[30px] rounded-[50%] mr-[20px] "
           />
-          <p>Nas daily</p>
+          <p  className="hidden md:block">Nas daily</p>
         </div>
       </div>
     </div>
