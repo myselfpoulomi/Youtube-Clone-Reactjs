@@ -120,7 +120,7 @@ function Sidebar({ sidebar , category, setCatagory }) {
             alt=""
             className="w-[30px] rounded-[50%] mr-[20px]"
           />
-          <p  className="hidden md:block">5-Minute Crafts</p>
+          <p  className="hidden md:block">5-Min Crafts</p>
         </div>
         <div className="flex items-center mb-[20px] w-fit flex-wrap cursor-pointer utuber">
           <img

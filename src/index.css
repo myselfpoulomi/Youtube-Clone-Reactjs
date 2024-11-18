@@ -19,7 +19,7 @@ img{
 } */
 
 .small-sidebar {
-  width:5%;
+  width:4%;
   background-color: #fff;
   height: 100vh;
   position: fixed;
@@ -66,12 +66,18 @@ img{
 
 .large-Container {
   margin-left: 3%;
-  margin-right:0 ;
-  border:1px solid black;
+  margin-right:1% ;
+  width: 95%;
 }
 
 .active img {
   padding-bottom: 2px;
   border-bottom: 3px solid red;
   
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

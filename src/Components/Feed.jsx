@@ -26,14 +26,14 @@ function Feed({ category }) {
   }, [category]);
 
   return (
-    <div className="md:grid md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-x-4 gap-y-7 mt-4 flex flex-col   ">
+    <div className="md:grid md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] md:gap-x-4 md:gap-y-7 md:mt-4 flex flex-col mt-0 gap-7 items-center ">
       {data.map((item, index) => {
         return (
-          <Link to={`video/${item.snippet.categoryId}/${item.id}`} className="pl-0">
+          <Link to={`video/${item.snippet.categoryId}/${item.id}`} className="pl-0 w-[90%] ">
             <img
               src={item.snippet.thumbnails.medium.url}
               alt=""
-              className="w-[100%] rounded-[5px]"
+              className="md:w-[100%] rounded-[5px] w-[100%]"
             />
             <h2 className="text-[16px] font-semibold text-[#000] my-[5px] mx-0">
               {item.snippet.title}

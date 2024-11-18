@@ -50,7 +50,7 @@ function PlayVideo({  categoryId }) {
     <div className="basis-[69%]">
       {/* <video src={video1} controls autoPlay muted className="w-[100%] rounded-[7px]"></video> */}
       <iframe
-        className="w-[100%] h-[750px] rounded-[7px]"
+        className="w-[100%] h-[650px] rounded-[7px]"
         src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
         title=""
         frameborder="0"
