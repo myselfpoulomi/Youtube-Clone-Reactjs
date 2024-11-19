@@ -92,41 +92,41 @@ function PlayVideo({  categoryId }) {
           </span>
         </div>
       </div>
-      <hr className="border-0 h-[1px] bg-[#ccc] my-[10px] mx-0" />
-      <div className="flex items-center mt-[20px] ">
+      <hr className="border-0 h-[1px] bg-[#ccc] my-[10px] mx-0 md:my-[20px] " />
+      <div className="flex items-center mt-[20px] ml-3  ">
         <img
           src={channeldata ? channeldata.snippet.thumbnails.default.url : ""}
           alt=""
-          className="w-[40px] rounded-[50%] mr-[15px]"
+          className="md:w-[40px] w-[30px] rounded-[50%] mr-[15px]"
         />
         <div className="flex-1 leading-[18px]">
-          <p className="text-[#000] font-bold text-[18px]">
+          <p className="text-[#000] font-bold md:text-[18px] text-[15px]">
             {apiData ? apiData.snippet.channelTitle : ""}
           </p>
-          <span className="text-[13px] text-[#5a5a5a]">
+          <span className="md:text-[13px] text-[12px] text-[#5a5a5a]">
             {channeldata
               ? value_convertor(channeldata.statistics.subscriberCount)
               : "1M"}{" "}
             Subscribers
           </span>
         </div>
-        <button className="bg-red-500 text-[#fff] py-[8px] px-[30px] border-0 outline-0 rounded-[4px] cursor-pointer">
+        <button className="bg-red-500 text-[#fff] md:py-[8px] md:px-[30px] border-0 outline-0 rounded-[4px] cursor-pointer px-[20px] py-[5px]">
           Subscribe
         </button>
       </div>
-      <div className="pl-[55px] my-[15px] mx-0">
+      <div className="pl-[55px] my-[15px] mx-0 md:text-[14px] text-[12px]">
         <p>
           {apiData
             ? apiData.snippet.description.slice(0, 300)
             : "Description Here"}
         </p>
-        <hr />
+        <hr className="border-0 h-[1px] bg-[#ccc] my-[10px] mx-0 md:my-[20px] " />
         <h4 className="text-[14px] text-[#5a5a5a] mt-[15px]">
           {apiData ? value_convertor(apiData.statistics.commentCount) : 102}{" "}
           Comments
         </h4>
         {CommentData.map((item, index) => {
-          return(<div key={index} className="flex items-start my-[20px] mx-0">
+          return(<div key={index} className="flex items-start my-[20px] mx-0 md:mr-0 mr-3">
             <img
               src={item.snippet.topLevelComment.snippet.authorProfileImageUrl}
               alt=""
