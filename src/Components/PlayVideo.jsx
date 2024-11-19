@@ -9,6 +9,7 @@ import user_profile from "../assets/user_profile.jpg";
 import { API_KEY, value_convertor } from "../Data";
 import moment from "moment";
 import { useParams } from "react-router-dom";
+import ReactPlayer from "react-player";
 
 function PlayVideo({  categoryId }) {
   const {videoId} = useParams ();
@@ -47,10 +48,12 @@ function PlayVideo({  categoryId }) {
   }, [apiData]);
 
   return (
-    <div className="basis-[69%]">
-      {/* <video src={video1} controls autoPlay muted className="w-[100%] rounded-[7px]"></video> */}
+    <div className="md:basis-[69%] w-[100vw] basis-[94%]" >
+     
+      <div className="w-[100%] flex justify-center pl-3 h-[250px] pr-0 md:h-[650px]"> 
+    
       <iframe
-        className="w-[100%] h-[650px] rounded-[7px]"
+       className="w-[100%] h-[100%] rounded-[7px]"
         src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
         title=""
         frameborder="0"
@@ -58,6 +61,8 @@ function PlayVideo({  categoryId }) {
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
+    {/* </div> */}
+    </div>
       <h3 className="mt-[10px] font-semibold text-[22px] ">
         {apiData ? apiData.snippet.title : "Title Here"}
       </h3>
