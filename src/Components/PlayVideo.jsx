@@ -50,7 +50,7 @@ function PlayVideo({  categoryId }) {
   return (
     <div className="md:basis-[69%] w-[100vw] basis-[94%]" >
      
-      <div className="w-[100%] flex justify-center pl-3 h-[250px] pr-0 md:h-[650px]"> 
+      <div className="w-[100%] flex flex-col justify-center pl-3 h-[300px] pr-0 md:h-[650px]"> 
     
       <iframe
        className="w-[100%] h-[100%] rounded-[7px]"
@@ -61,31 +61,33 @@ function PlayVideo({  categoryId }) {
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
-    {/* </div> */}
-    </div>
-      <h3 className="mt-[10px] font-semibold text-[22px] ">
+
+<h3 className="mt-[10px] font-semibold md:text-[22px] text-[18px] ">
         {apiData ? apiData.snippet.title : "Title Here"}
       </h3>
-      <div className="flex items-center justify-between flex-wrap mt-[10px] text-[14px] text-[#5a5a5a]">
-        <p>
+   
+    </div>
+     
+      <div className="flex  items-center justify-between md:flex-wrap mt-[10px] md:text-[14px] text-[12px] text-[#5a5a5a] ml-3  flex-row ">
+        <p >
           {apiData ? value_convertor(apiData.statistics.viewCount) : "16K"}{" "}
           Views &bull;{" "}
           {apiData ? moment(apiData.snippet.publishedAt).fromNow() : ""}
         </p>
         <div className="flex">
           <span className="inline-flex items-center ml-[15px]">
-            <img src={like} alt="" className="w-[20px] mr-[8px]" />
+            <img src={like} alt="" className="md:w-[20px] mr-[8px] w-[15px]" />
             {apiData ? value_convertor(apiData.statistics.likeCount) : 155}
           </span>
           <span className="inline-flex items-center ml-[15px]">
-            <img src={dislike} alt="" className="w-[20px] mr-[8px]" />
+            <img src={dislike} alt="" className="md:w-[20px] mr-[8px] w-[15px]" />
           </span>
           <span className="inline-flex items-center ml-[15px]">
-            <img src={share} alt="" className="w-[20px] mr-[8px]" />
+            <img src={share} alt="" className="md:w-[20px] mr-[8px] w-[15px]" />
             Share
           </span>
           <span className="inline-flex items-center ml-[15px]">
-            <img src={save} alt="" className="w-[20px] mr-[8px]" />
+            <img src={save} alt=""  className="md:w-[20px] mr-[8px] w-[15px]" />
             Save
           </span>
         </div>
