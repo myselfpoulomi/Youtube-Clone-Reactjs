@@ -26,16 +26,16 @@ function Recommended({ categoryId }) {
   }, []);
 
   return (
-    <div className="basis-[30%] ">
+    <div className="md:basis-[30%] basis-[100%] ">
       {apiData.map((item,index) => {
         return (
           <Link to={`/video/${item.snippet.categoryId}/${item.id}`} key={index} className="flex justify-between mb-[8px]">
             <img
               src={item.snippet.thumbnails.medium.url}
               alt=""
-              className="basis-[49%] w-[50%] rounded-md"
+              className="md:basis-[49%] md:w-[50%] md:h-fit rounded-md basis-[39%] w-[45%] h-[100px]"
             />
-            <div className="basis-[49%]">
+            <div className="md:basis-[49%] basis-[59%] md:pl-1 pl-2 pr-3">
               <h4 className="text-[17px] mb-[5px] font-semibold">
                {item.snippet.title}
               </h4>

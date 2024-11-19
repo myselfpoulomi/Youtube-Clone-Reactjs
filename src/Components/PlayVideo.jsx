@@ -143,12 +143,12 @@ function PlayVideo({  categoryId }) {
                 {item.snippet.topLevelComment.snippet.textDisplay}
               </p>
               <div className="flex items-center my-[8px] mx-0 text-[14px] ">
-                <img src={like} alt="" className="rounded-0 w-[20px] mr-[5px]" />{" "}
+                <img src={like} alt=""  className="md:w-[20px] mr-[8px] w-[15px]" />{" "}
                 <span className="mr-[20px] text-[#5a5a5a]">{value_convertor(item.snippet.topLevelComment.snippet.likeCount)}</span>
                 <img
                   src={dislike}
                   alt=""
-                  className="rounded-0 w-[20px] mr-[5px]"
+                   className="md:w-[20px] mr-[8px] w-[15px]"
                 />
               </div>
             </div>
