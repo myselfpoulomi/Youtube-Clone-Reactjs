@@ -26,7 +26,7 @@ function Feed({ category }) {
   }, [category]);
 
   return (
-    <div className="md:grid md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] md:gap-x-4 md:gap-y-7 md:mt-4 flex flex-col mt-0 gap-7 items-center ">
+    <div className="md:grid md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] md:gap-x-4 md:gap-y-7 md:mt-4 flex flex-col mt-0 gap-7 md:items-start items-center  ">
       {data.map((item, index) => {
         return (
           <Link to={`video/${item.snippet.categoryId}/${item.id}`} className="pl-0 w-[90%] ">
